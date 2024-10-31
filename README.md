@@ -1,4 +1,4 @@
-# java-cli-maven-mysql-hibernate-simple
+# java-cli-grradle-blade-mysql-hibernate-simple
 
 ## Description
 Creates a small database table
@@ -7,14 +7,14 @@ hql.
 
 ## Tech stack
 - java
-- maven
+- gradle
   - hibernate
   - hql
-  - log4j
+  - blade
   - mysql driver
 
 ## Docker stack
-- maven:3-openjdk-17
+- gradle:7.6.4-jdk11-alpine
 - mariadb:latest
 
 ## To run

@@ -1,9 +1,9 @@
-FROM maven:3-openjdk-17
+FROM gradle:jdk11
 
-WORKDIR /usr/src/mymaven
+WORKDIR /app
 
-COPY bin .
+ADD --chown=gradle:gradle /bin/ .
 
-ENTRYPOINT ["mvn"]
+RUN chmod -R +x *
 
-CMD ["clean", "install", "compile", "exec:java"]
+CMD ["gradle", "run"]
