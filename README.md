@@ -1,4 +1,4 @@
-# java-cli-grradle-blade-mysql-hibernate-simple
+# java-cli-gradle-blade-postgres-hibernate-simple
 
 ## Description
 Creates a small database table
@@ -11,11 +11,11 @@ hql.
   - hibernate
   - hql
   - blade
-  - mysql driver
+  - postgres driver
 
 ## Docker stack
 - gradle:7.6.4-jdk11-alpine
-- mariadb:latest
+- postgres:alpine
 
 ## To run
 `sudo ./install.sh -u`
