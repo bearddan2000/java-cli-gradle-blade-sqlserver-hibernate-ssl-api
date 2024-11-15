@@ -1,9 +1,9 @@
-# java-cli-gradle-blade-postgres-hibernate-simple
+# java-cli-gradle-blade-sqlserver-hibernate-ssl-api
 
 ## Description
 Creates a small database table
 called `dog` and populates with
-hql.
+hql. Provides end-to-end self signed ssl certs.
 
 ## Tech stack
 - java
@@ -11,14 +11,17 @@ hql.
   - hibernate
   - hql
   - blade
-  - postgres driver
+  - mssql driver
 
 ## Docker stack
+- alpine:edge
 - gradle:7.6.4-jdk11-alpine
-- postgres:alpine
+- mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+- traefik:v2.4
 
 ## To run
 `sudo ./install.sh -u`
+Available at https://myapi.docker.localhost/basic-route-example
 
 ## To stop
 `sudo ./install.sh -d`

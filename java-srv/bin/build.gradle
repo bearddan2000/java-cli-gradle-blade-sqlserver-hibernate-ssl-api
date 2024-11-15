@@ -6,7 +6,7 @@ repositories {
 }
 
 dependencies {
-    implementation "org.postgresql:postgresql:42.2.18.jre7"
+    implementation "com.microsoft.sqlserver:mssql-jdbc:8.4.1.jre11"
     implementation "com.google.code.gson:gson:2.9.0"
     implementation "org.hibernate:hibernate-core:5.3.7.Final"
     implementation "javax.persistence:javax.persistence-api:2.2"
